@@ -14,6 +14,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 var balanceInit = 0;
+var balanceInit2 = 0;
 var btnVerifica = document.getElementById('verifica');
 var deposito = document.getElementById('Deposito');
 var prelievo = document.getElementById('Prelievo');
@@ -47,7 +48,7 @@ var MotherAccount10 = /** @class */ (function (_super) {
         return _super.call(this, valore1, valore2) || this;
     }
     MotherAccount10.prototype.totalBalance = function () {
-        return balanceInit = (balanceInit - ((balanceInit * 10) / 100));
+        return balanceInit2 += ((this.oneDeposit - this.oneWithDraw) * 90) / 100;
     };
     MotherAccount10.prototype.getMotherAccount10 = function () {
         return "Mother Account <br> Deposit: ".concat(this.oneDeposit, " <br> Withdraw: ").concat(this.oneWithDraw, " <br> Total Balance: ").concat(this.totalBalance());

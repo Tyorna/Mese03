@@ -1,4 +1,5 @@
 var balanceInit: number = 0;
+var balanceInit2: number = 0;
 var btnVerifica = document.getElementById('verifica') as HTMLElement;
 var deposito = document.getElementById('Deposito') as HTMLInputElement | null;
 var prelievo = document.getElementById('Prelievo') as HTMLInputElement | null;
@@ -38,7 +39,7 @@ class MotherAccount10 extends SonAccount10 {
         super (valore1, valore2);
     }
     totalBalance():number {
-        return balanceInit = (balanceInit -((balanceInit * 10)/ 100));
+        return balanceInit2 += ((this.oneDeposit -  this.oneWithDraw) * 90)/ 100;
     }
     getMotherAccount10(): string {
         return `Mother Account <br> Deposit: ${this.oneDeposit} <br> Withdraw: ${this.oneWithDraw} <br> Total Balance: ${this.totalBalance()}`;
