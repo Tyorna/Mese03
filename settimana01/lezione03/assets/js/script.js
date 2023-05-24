@@ -9,7 +9,7 @@ function ContoFinale2() {
     valore1 = Number(codredd === null || codredd === void 0 ? void 0 : codredd.value);
     valore2 = Number(redditoannuolordo === null || redditoannuolordo === void 0 ? void 0 : redditoannuolordo.value);
     var newTotalIncome = new Lavoratori3(valore1, valore2);
-    return messaggio.innerHTML += "Conto finale <br>".concat(newTotalIncome.getTotale(), " <br>");
+    return messaggio.innerHTML = "Conto finale <br>".concat(newTotalIncome.getTotale(), " <br>");
 }
 var Lavoratori3 = /** @class */ (function () {
     function Lavoratori3(_codredd, _redditoannuolordo) {

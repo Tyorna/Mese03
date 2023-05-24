@@ -11,7 +11,7 @@ function ContoFinale2(): string {
     valore1 = Number(codredd?.value);
 	valore2 = Number(redditoannuolordo?.value);
      let newTotalIncome = new Lavoratori3 (valore1, valore2);
-     return messaggio!.innerHTML += `Conto finale <br>${newTotalIncome.getTotale()} <br>`;
+     return messaggio!.innerHTML = `Conto finale <br>${newTotalIncome.getTotale()} <br>`;
 }
 
 class Lavoratori3 {

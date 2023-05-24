@@ -42,5 +42,7 @@ class TasseLavoratore extends Conto {
 }
 
 let nuovoAccount2 = new TasseLavoratore(56, 3400, 26, 15);
+let nuovoAccount3 = new TasseLavoratore(40, 5400, 26, 15);
 
 console.log(nuovoAccount2.getTotale());
+console.log(nuovoAccount3.getTotale());

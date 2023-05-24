@@ -45,4 +45,6 @@ var TasseLavoratore = /** @class */ (function (_super) {
     return TasseLavoratore;
 }(Conto));
 var nuovoAccount2 = new TasseLavoratore(56, 3400, 26, 15);
+var nuovoAccount3 = new TasseLavoratore(40, 5400, 26, 15);
 console.log(nuovoAccount2.getTotale());
+console.log(nuovoAccount3.getTotale());
